@@ -19,3 +19,20 @@ export type job = {
   salaryRange: salaryRange;
   benefits: string;
 };
+
+export type candidate = {
+  candidateId: string;
+  firstName: string;
+  lastName: string;
+  emailAddress: string;
+  phoneNumber: string;
+  address: string;
+  linkedInProfileUrl: string;
+  portfolioUrl: string;
+};
+
+export type jobApplication = {
+  job: job;
+  candidate: candidate;
+  applicationStatus: string;
+};
