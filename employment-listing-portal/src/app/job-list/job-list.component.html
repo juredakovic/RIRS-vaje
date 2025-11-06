@@ -1,1 +1,24 @@
-<p>job-list works!</p>
+<div>
+  <ul>
+    @for(listing of jobData.list; track listing.jobId){
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{ listing.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-subtitle>{{ listing.department }}</mat-card-subtitle>
+      <mat-card-content>
+        <li>Description : {{ listing.description }}</li>
+        <li>Responsibilites : {{ listing.responsibilites }}</li>
+        <li>Requirements : {{ listing.requirements }}</li>
+        <li>Location : {{ listing.location }}</li>
+        <li>employment Type : {{ listing.employmentType }}</li>
+        <li>
+          salary range : [ {{ listing.salaryRange.minSalary }} -
+          {{ listing.salaryRange.maxSalary }} ]
+        </li>
+        <li>Benefits : {{ listing.benefits }}</li>
+      </mat-card-content>
+    </mat-card>
+    }
+  </ul>
+</div>
