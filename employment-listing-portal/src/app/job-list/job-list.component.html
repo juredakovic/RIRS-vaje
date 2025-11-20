@@ -1,7 +1,7 @@
 <div>
   <ul>
     @for(listing of jobData.list; track listing.jobId){
-    <mat-card class="example-card" appearance="outlined">
+    <mat-card class="example-card mx-4 my-2" appearance="outlined">
       <mat-card-header>
         <mat-card-title>{{ listing.title }}</mat-card-title>
       </mat-card-header>
@@ -18,7 +18,13 @@
         </li>
         <li>Benefits : {{ listing.benefits }}</li>
       </mat-card-content>
+      <div class="flex">
+        <button class="bg-slate-800 text-white h-12 w-full rounded-bl-lg cursor-pointer">Details</button>
+        <button class="bg-black text-white h-12 w-full rounded-br-lg cursor-pointer">Save</button>
+      </div>
+      
     </mat-card>
     }
+  
   </ul>
 </div>
