@@ -1,10 +1,10 @@
 import { jobList, salaryRange } from '../job-list/models/jobList';
-
+import { job } from '../job-list/models/jobList';
 const salaryRange1: salaryRange = {
   minSalary: 5,
   maxSalary: 15,
 };
-export const data = {
+export const data  = {
   list: [
     {
       jobId: 12345,

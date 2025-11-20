@@ -5,5 +5,30 @@ import { Injectable } from '@angular/core';
 })
 export class JobServiceService {
 
-  constructor() { }
+  constructor() {
+   }
+
+  updateJobStatus(status : string) {
+    switch(status) {
+      case 'application received': {
+
+      }
+      break;
+
+      case 'application reviewed': {
+
+      }
+      break;
+
+      case 'applicationin line': {
+
+      }
+      break;
+
+      case 'applicationcompleted': {
+        
+      }
+
+    }
+  }
 }
